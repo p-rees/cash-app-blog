@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#F8F8F8" rx="12"/>
+    
+    <!-- Phone Outline -->
+    <rect x="120" y="40" width="160" height="220" rx="20" stroke="#00D54B" stroke-width="4" fill="white"/>
+    
+    <!-- Screen -->
+    <rect x="130" y="50" width="140" height="200" fill="#F8F8F8" rx="12"/>
+    
+    <!-- App Elements -->
+    <rect x="140" y="70" width="120" height="40" fill="#00D54B" rx="8" opacity="0.2"/>
+    <rect x="140" y="120" width="120" height="20" fill="#00D54B" rx="4" opacity="0.1"/>
+    <rect x="140" y="150" width="80" height="20" fill="#00D54B" rx="4" opacity="0.1"/>
+    
+    <!-- Dollar Sign -->
+    <text x="185" y="98" font-family="Arial" font-size="24" fill="#00D54B" text-anchor="middle">$</text>
+    
+    <!-- Home Button -->
+    <circle cx="200" cy="270" r="10" stroke="#00D54B" stroke-width="2" fill="white"/>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="400" height="300" fill="#F8F8F8" rx="12"/>
+    
+    <!-- Document -->
+    <rect x="120" y="60" width="160" height="180" fill="white" stroke="#00D54B" stroke-width="2" rx="8"/>
+    
+    <!-- Document Lines -->
+    <rect x="140" y="90" width="120" height="8" fill="#00D54B" opacity="0.2" rx="4"/>
+    <rect x="140" y="110" width="80" height="8" fill="#00D54B" opacity="0.2" rx="4"/>
+    <rect x="140" y="130" width="100" height="8" fill="#00D54B" opacity="0.2" rx="4"/>
+    
+    <!-- Checkmark -->
+    <circle cx="200" cy="180" r="20" fill="#00D54B" opacity="0.2"/>
+    <path d="M190 180 L198 188 L210 172" stroke="#00D54B" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Dollar Sign -->
+    <text x="200" y="80" font-family="Arial" font-size="24" fill="#00D54B" text-anchor="middle">$</text>
+</svg>

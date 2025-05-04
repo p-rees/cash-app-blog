@@ -1,0 +1,218 @@
+/* Main styling with Cash App brand elements */
+:root {
+    /* Core colors */
+    --cash-black: #000000;
+    --cash-white: #FFFFFF;
+    --cash-green: #00D54B;
+    --cash-green-dark: #00B341;
+    --cash-blue: #0BB1D3;
+    --cash-purple: #A134D3;
+    --cash-pink: #FF4E98;
+    --cash-yellow: #FFB413;
+    
+    /* UI colors */
+    --background: var(--cash-white);
+    --text-primary: var(--cash-black);
+    --text-secondary: rgba(0, 0, 0, 0.7);
+    --accent-primary: var(--cash-green);
+    --accent-secondary: var(--cash-blue);
+    
+    /* Typography */
+    --font-primary: 'Cash Sans', 'Helvetica Neue', sans-serif;
+    --font-size-h1: 4.5rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 2rem;
+    --font-size-body: 1.125rem;
+}
+
+/* Base styles */
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+
+p {
+    font-size: var(--font-size-body);
+    margin: 0 0 1.5rem;
+    color: var(--text-secondary);
+}
+
+/* Layout */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Navigation */
+.site-header {
+    padding: 2rem 0;
+    position: relative;
+    z-index: 100;
+    background: var(--cash-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cash-black);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgba(0, 213, 75, 0.1);
+    color: var(--cash-green);
+}
+
+/* Buttons */
+.button-primary, .button-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: var(--cash-green);
+    color: var(--cash-white);
+}
+
+.button-primary:hover {
+    background: var(--cash-green-dark);
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-primary);
+}
+
+.button-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Geometric Pattern Overlay - Simplified */
+.geometric-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.03;
+    background-size: 20px 20px;
+    background-image: 
+        linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+}
+
+/* Glow Effects - Subtle */
+.glow-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.glow-effect::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(0, 213, 75, 0.1) 0%,
+        rgba(0, 213, 75, 0) 70%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+}
+
+.glow-effect:hover::after {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --font-size-h1: 3rem;
+        --font-size-h2: 2.5rem;
+        --font-size-h3: 1.75rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* Section Spacing */
+section {
+    padding: 6rem 0;
+    position: relative;
+}

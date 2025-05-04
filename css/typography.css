@@ -1,0 +1,141 @@
+/* Typography Scale */
+:root {
+    --h1-size: 3.5rem;
+    --h2-size: 2.5rem;
+    --h3-size: 2rem;
+    --h4-size: 1.5rem;
+    --h5-size: 1.25rem;
+    --h6-size: 1rem;
+    --small-text: 0.875rem;
+    
+    /* Font Weights */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    line-height: var(--heading-line-height);
+    font-weight: var(--font-bold);
+}
+
+h1 {
+    font-size: var(--h1-size);
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+h5 {
+    font-size: var(--h5-size);
+}
+
+h6 {
+    font-size: var(--h6-size);
+}
+
+/* Body Text */
+p {
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: var(--cash-green);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--cash-black);
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Emphasis */
+strong {
+    font-weight: var(--font-bold);
+}
+
+em {
+    font-style: italic;
+}
+
+/* Quotes */
+blockquote {
+    margin: 2em 0;
+    padding-left: 1.5em;
+    border-left: 4px solid var(--cash-green);
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--cash-gray-500);
+}
+
+/* Code */
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--cash-gray-100);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.875em;
+}
+
+/* Article Typography */
+.article-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.article-content h2 {
+    margin-top: 2em;
+}
+
+.article-content p {
+    margin-bottom: 1.5em;
+}
+
+/* Meta Text */
+.meta-text {
+    font-size: var(--small-text);
+    color: var(--cash-gray-500);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    :root {
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.75rem;
+        --h4-size: 1.5rem;
+        --h5-size: 1.25rem;
+        --h6-size: 1rem;
+    }
+    
+    .article-content {
+        font-size: 0.9375rem;
+    }
+}

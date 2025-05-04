@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="450" fill="#000000"/>
+    
+    <!-- Video Thumbnail Gradient -->
+    <rect width="800" height="450" fill="url(#thumbnail-gradient)"/>
+    
+    <!-- Cash App Card Illustration -->
+    <g transform="translate(300, 125) scale(1.2)">
+        <!-- Card -->
+        <rect x="0" y="0" width="160" height="100" rx="10" fill="#00D54B"/>
+        
+        <!-- Card Pattern -->
+        <path d="M0 20 L160 80" stroke="white" stroke-width="1" opacity="0.1"/>
+        <path d="M0 40 L160 100" stroke="white" stroke-width="1" opacity="0.1"/>
+        <path d="M0 60 L160 120" stroke="white" stroke-width="1" opacity="0.1"/>
+        
+        <!-- Card Chip -->
+        <rect x="20" y="20" width="30" height="20" rx="4" fill="#FFD700"/>
+        
+        <!-- Stock Chart Line -->
+        <path d="M20 70 C40 60, 60 80, 80 50 S120 60, 140 40" 
+              stroke="white" 
+              stroke-width="2"
+              fill="none"/>
+    </g>
+    
+    <!-- Title Text -->
+    <text x="400" y="350" 
+          font-family="Arial" 
+          font-size="24" 
+          fill="white" 
+          text-anchor="middle"
+          font-weight="bold">How Stocks Work on Cash App</text>
+    
+    <!-- Gradient Definition -->
+    <defs>
+        <linearGradient id="thumbnail-gradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#000000" stop-opacity="0.8"/>
+        </linearGradient>
+    </defs>
+</svg>
